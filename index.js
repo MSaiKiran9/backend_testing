@@ -17,11 +17,8 @@ app.get("/", (req, res) => {
 })
 
 app.get("/home", (req, res) => {
-    axios.get(process.env.url).then(resp => {
-        res.json(resp.data.fact);
-        res.end;
-    }
-    )
+    res.json("home !")
+    res.end;
 })
 
-app.listen(process.env.port)
+app.listen(process.env.port || 8000)
