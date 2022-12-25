@@ -5,11 +5,11 @@ const axios = require("axios");
 
 const app = express()
 
-app.use(
-    cors({
-        origin: "https://msaikiran9.github.io/Sudoku_Solver9x9/:8000"
-    })
-)
+// app.use(
+//     cors({
+//         origin: "https://msaikiran9.github.io/Sudoku_Solver9x9/:8000"
+//     })
+// )
 
 app.get("/", (req, res) => {
     res.json("Hi")
