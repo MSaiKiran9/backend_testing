@@ -17,8 +17,10 @@ app.get("/", (req, res) => {
 })
 
 app.get("/home", (req, res) => {
-    res.json("home !")
-    res.end;
+    axios("https://catfact.ninja/fact").then((resp) => {
+        res.json(resp.data.fact);
+        res.end;
+    })
 })
 
 app.listen(process.env.port)
