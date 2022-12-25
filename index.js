@@ -7,7 +7,7 @@ const app = express()
 
 app.use(
     cors({
-        origin: "https://msaikiran9.github.io/Sudoku_Solver9x9/"
+        origin: "https://msaikiran9.github.io/Sudoku_Solver9x9/:8000"
     })
 )
 
