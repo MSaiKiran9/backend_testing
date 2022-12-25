@@ -21,4 +21,4 @@ app.get("/home", (req, res) => {
     res.end;
 })
 
-app.listen(process.env.port || 8000)
+app.listen(process.env.port)
