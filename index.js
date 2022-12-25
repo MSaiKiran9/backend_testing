@@ -5,7 +5,6 @@ const axios = require("axios");
 
 const app = express()
 
-console.log(process.env.port)
 app.use(
     cors({
         origin: "*"
